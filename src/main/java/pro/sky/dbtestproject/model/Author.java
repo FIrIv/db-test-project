@@ -29,6 +29,10 @@ public class Author {
         return this.name;
     }
 
+    public Set<Book> getBooks () {
+        return Set.copyOf(this.books);
+    }
+
     @Override
     public String toString() {
         return "Автор: " + this.name + ". ";

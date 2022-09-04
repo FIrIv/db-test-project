@@ -1,0 +1,5 @@
+
+SELECT a.name, b.name
+FROM author AS a
+         INNER JOIN book b ON a.id = b.author_id
+WHERE a.name = 'Алексей Толстой';
